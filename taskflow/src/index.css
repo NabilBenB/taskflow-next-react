@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Brand green — keep for TP / consigne */
+  --tf-primary: #1b8c3e;
+  --tf-primary-hover: #157a33;
+  --tf-primary-soft: rgba(27, 140, 62, 0.12);
+  --tf-primary-muted: rgba(27, 140, 62, 0.08);
+
+  --tf-surface: #ffffff;
+  --tf-surface-elevated: #fafcfb;
+  --tf-border: #e2e8e4;
+  --tf-border-strong: #c5d4cc;
+
+  --tf-text: #15201a;
+  --tf-text-muted: #5a6b62;
+  --tf-danger: #c62828;
+  --tf-danger-bg: #ffebee;
+
+  --tf-radius-sm: 8px;
+  --tf-radius-md: 12px;
+  --tf-radius-lg: 16px;
+
+  --tf-shadow-sm: 0 1px 2px rgba(15, 35, 25, 0.05);
+  --tf-shadow-md: 0 4px 20px rgba(15, 35, 25, 0.07);
+  --tf-shadow-lg: 0 16px 48px rgba(15, 35, 25, 0.1);
+  --tf-shadow-card-hover: 0 8px 28px rgba(15, 35, 25, 0.12);
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-optical-sizing: auto;
+  color: var(--tf-text);
+  background-color: #e8eeea;
+  background-image:
+    radial-gradient(ellipse 120% 80% at 0% 0%, rgba(27, 140, 62, 0.09), transparent 50%),
+    radial-gradient(ellipse 100% 60% at 100% 100%, rgba(27, 140, 62, 0.06), transparent 45%);
+  background-attachment: fixed;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

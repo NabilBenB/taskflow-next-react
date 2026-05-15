@@ -1,0 +1,107 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1.5rem;
+  background:
+    radial-gradient(ellipse 90% 70% at 50% -10%, rgba(27, 140, 62, 0.18), transparent 55%),
+    radial-gradient(ellipse 60% 50% at 100% 100%, rgba(27, 140, 62, 0.1), transparent 50%),
+    linear-gradient(165deg, #dfe8e2 0%, #eef2ef 45%, #e4ebe6 100%);
+}
+
+.form {
+  background: var(--tf-surface);
+  padding: 2.5rem 2.25rem;
+  border-radius: var(--tf-radius-lg);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border: 1px solid var(--tf-border);
+  box-shadow:
+    var(--tf-shadow-lg),
+    0 0 0 1px rgba(255, 255, 255, 0.6) inset;
+}
+
+.title {
+  color: var(--tf-primary);
+  font-size: 1.85rem;
+  font-weight: 750;
+  letter-spacing: -0.03em;
+  text-align: center;
+}
+
+.subtitle {
+  color: var(--tf-text-muted);
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 1.45;
+  margin-top: -0.25rem;
+}
+
+.input {
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--tf-border);
+  border-radius: var(--tf-radius-sm);
+  font-size: 1rem;
+  outline: none;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+  background: var(--tf-surface-elevated);
+}
+
+.input:focus {
+  border-color: var(--tf-primary);
+  box-shadow: 0 0 0 3px var(--tf-primary-soft);
+  background: var(--tf-surface);
+}
+
+.input::placeholder {
+  color: #9aa8a0;
+}
+
+.button {
+  padding: 0.82rem;
+  background: var(--tf-primary);
+  color: white;
+  border: none;
+  border-radius: var(--tf-radius-sm);
+  font-size: 1rem;
+  font-weight: 650;
+  cursor: pointer;
+  margin-top: 0.25rem;
+  box-shadow: 0 2px 12px rgba(27, 140, 62, 0.35);
+  transition:
+    background 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.15s ease;
+}
+
+.button:hover:not(:disabled) {
+  background: var(--tf-primary-hover);
+  box-shadow: 0 4px 18px rgba(27, 140, 62, 0.42);
+}
+
+.button:active:not(:disabled) {
+  transform: translateY(1px);
+}
+
+.button:disabled {
+  background: #b0b8b4;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+.error {
+  background: var(--tf-danger-bg);
+  color: var(--tf-danger);
+  padding: 0.75rem;
+  border-radius: var(--tf-radius-sm);
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: 1px solid rgba(198, 40, 40, 0.2);
+}

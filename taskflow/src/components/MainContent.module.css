@@ -1,0 +1,70 @@
+.main {
+  flex: 1;
+  overflow: auto;
+  padding: 1.1rem 1.15rem 1.5rem;
+}
+
+.board {
+  display: flex;
+  gap: 1.1rem;
+  align-items: flex-start;
+  min-height: 100%;
+}
+
+.column {
+  flex: 1;
+  min-width: 200px;
+  max-width: 320px;
+  padding: 1rem 1rem 1.1rem;
+  background: var(--tf-surface);
+  border-radius: var(--tf-radius-md);
+  border: 1px solid var(--tf-border);
+  box-shadow: var(--tf-shadow-md);
+  position: relative;
+  overflow: hidden;
+}
+
+.column::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--tf-primary), #2ea854);
+  opacity: 0.85;
+}
+
+.colTitle {
+  font-size: 0.8125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.85rem;
+  margin-top: 0.15rem;
+  color: var(--tf-text-muted);
+}
+
+.card {
+  padding: 0.7rem 0.85rem;
+  margin-bottom: 0.55rem;
+  background: var(--tf-surface-elevated);
+  border-radius: var(--tf-radius-sm);
+  font-size: 0.875rem;
+  color: var(--tf-text);
+  border: 1px solid var(--tf-border);
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease,
+    border-color 0.18s ease;
+}
+
+.card:last-child {
+  margin-bottom: 0;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--tf-shadow-card-hover);
+  border-color: var(--tf-border-strong);
+}

@@ -1,0 +1,52 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0 1rem 1rem;
+}
+
+.btn {
+  display: block;
+  padding: 0.5rem 0.95rem;
+  border-radius: var(--tf-radius-sm);
+  border: 1px solid var(--tf-border);
+  background: var(--tf-surface);
+  color: var(--tf-text);
+  font: inherit;
+  font-weight: 500;
+  font-size: 0.875rem;
+  cursor: pointer;
+  box-shadow: var(--tf-shadow-sm);
+  transition:
+    border-color 0.15s ease,
+    color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.btn:hover {
+  border-color: var(--tf-primary);
+  color: var(--tf-primary);
+  box-shadow: 0 2px 10px rgba(27, 140, 62, 0.12);
+}
+
+.bubble {
+  position: fixed;
+  z-index: 50;
+  white-space: nowrap;
+  color: #fff;
+  padding: 0.55rem 1rem;
+  border-radius: var(--tf-radius-sm);
+  pointer-events: none;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  box-shadow: var(--tf-shadow-md);
+}
+
+.flash {
+  background: linear-gradient(135deg, #c0392b, #a93226);
+}
+
+.ok {
+  background: linear-gradient(135deg, #2d3436, #1e272e);
+}
