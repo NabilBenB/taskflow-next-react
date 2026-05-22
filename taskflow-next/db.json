@@ -1,0 +1,22 @@
+{
+  "projects": [
+    {
+      "id": "1",
+      "name": "Site GAMING",
+      "color": "#3498db"
+    },
+    {
+      "id": "1778801816522",
+      "name": "W",
+      "color": "#8f0000"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "email": "nabil2@taskflow.com",
+      "password": "password123",
+      "name": "Nabil"
+    }
+  ]
+}
